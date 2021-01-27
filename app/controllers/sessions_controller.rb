@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
   def new; end
   def create
-    user = User.find_by(username: params[:session][:username])
-    if user
-      log_in user
+    @user = User.find_by(username: params[:session][:username])
+    if @user
+      log_in @user
       flash[:success] = 'logged in with success'
       redirect_to user_path(current_user)
     else

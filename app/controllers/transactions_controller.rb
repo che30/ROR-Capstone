@@ -6,8 +6,8 @@ class TransactionsController < ApplicationController
     @transaction= Transaction.new
   end
   def create
-    transaction=current_user.transactions.build(transaction_params)
-    if transaction.save
+    @transaction=current_user.transactions.build(transaction_params)
+    if @transaction.save
       flash[:notice]="transaction was succesffuly created"
       redirect_to transaction_path(current_user)
     else 
@@ -18,6 +18,6 @@ class TransactionsController < ApplicationController
   end
   private
   def transaction_params
-    params.require(:transaction).permit(:amount,:name,:group_id)
+    params.require(:transaction).permit(:name,:amount,:group_id)
   end
 end
