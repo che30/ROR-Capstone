@@ -11,6 +11,37 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="mt-4">
+    
+   <div class="list-unstyled d-flex justify-content-between ">
+    <% if current_user %>
+       <ul class="list-unstyled"> 
+         <li> <%=current_user.username %></span></li>
+        <li> <%= image_tag current_user.avatar.url(:thumb) %> </li>
+      </ul>
+     <ul class="list-unstyled">
+     <li> <%= link_to 'logout', logout_path,method: :delete %></li></ul>
+
+      <% else %>
+      <ul class="list-unstyled d-flex flex-row ml-auto">
+      <li class="mr-2">
+      <%= link_to 'sign in', login_path %>
+      </li>
+      <li> <%= link_to 'sign up', signup_path %></li>
+      </ul>
+    <% end %>
+    
+   </div>
+    </nav>
+    <% if flash[:notice] %>
+    <div class="notice text-center"><%= flash[:notice] %></div>
+    <% else %>
+    <div class="danger text-center"><%= flash.now[:alert] %></div>
+    <% end %>
+    <div class="container">
+
+      <%= yield %>
+    </div>
+ 
   </body>
 </html>

@@ -1,0 +1,9 @@
+
+<% if @transaction.nil? %>
+<%= link_to 'new transaction', new_transaction_path, class:'btn btn-primary' %>
+<% else %>
+<% @transaction.each do |t| %>
+  <%= t.name  %>
+  <% end %>
+  
+<% end %>
