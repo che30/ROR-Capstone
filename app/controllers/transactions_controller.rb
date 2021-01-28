@@ -1,4 +1,5 @@
 class TransactionsController < ApplicationController
+  before_action :authorize,only: [:new,:index]
   def index
     @transactions=Transaction.all
   end

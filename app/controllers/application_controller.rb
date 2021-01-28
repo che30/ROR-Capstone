@@ -10,5 +10,7 @@ class ApplicationController < ActionController::Base
         session[:user_id])
       end
     end
-    
+    def authorize
+      redirect_to login_path, alert: "Not Authorised " if current_user.nil?
+    end
 end

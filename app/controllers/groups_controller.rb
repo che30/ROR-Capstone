@@ -1,5 +1,6 @@
 class GroupsController < ApplicationController
   include GroupsHelper
+  before_action :authorize,only: [:new,:index]
   def new
     @group=Group.new
     @icons = icons

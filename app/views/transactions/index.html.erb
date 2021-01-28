@@ -1,9 +1,11 @@
+<div>
 
-<% if @transaction.nil? %>
-<%= link_to 'new transaction', new_transaction_path, class:'btn btn-primary' %>
-<% else %>
-<% @transaction.each do |t| %>
+<% if !@transactions.nil? %>
+<% @transactions.each do |t| %>
   <%= t.name  %>
   <% end %>
   
-<% end %>
+<% end %></div>
+<div>
+<%= link_to 'new transaction', new_transaction_path, class:'btn btn-primary' %>
+</div>
