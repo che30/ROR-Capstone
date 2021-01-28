@@ -6,7 +6,7 @@ class GroupsController < ApplicationController
     @icons = icons
   end
   def index
-    @groups=Group.all 
+    @groups=Group.all.order(name: 'ASC') 
   end
 def create
 @group  = current_user.groups.build(group_params)
