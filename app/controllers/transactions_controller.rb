@@ -1,7 +1,7 @@
 class TransactionsController < ApplicationController
   before_action :authorize,only: [:new,:index]
   def index
-    @transactions=Transaction.all
+      @transactions=current_user.transactions.all.order('created_at DESC')
   end
   def new
     @transaction= Transaction.new

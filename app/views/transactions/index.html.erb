@@ -1,11 +1,23 @@
+<h2 class="d-flex justify-content-between">
 <div>
+Total amout
+</div>
+<div>
+ <%=sum_amount(@transactions)%>
+</div>
+</h2>
+<% @transactions.each do |transaction| %>
+<section class="d-flex justify-content-between">
+<div class="d-flex">
+<div><img src="<%=transaction.group.icon%>" alt="" class="w-25"></div>
+<div><ul class="list-unstyled"><li><%=transaction.name%></li>
+<li><%=transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></li>
+</ul>
+</div>
+</div>
+<div><%=transaction.amount%></div>
+</section>
+<% end %>
 
-<% if !@transactions.nil? %>
-<% @transactions.each do |t| %>
-  <%= t.name  %>
-  <% end %>
-  
-<% end %></div>
-<div>
 <%= link_to 'new transaction', new_transaction_path, class:'btn btn-primary' %>
 </div>
