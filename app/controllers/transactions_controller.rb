@@ -1,10 +1,16 @@
 class TransactionsController < ApplicationController
   before_action :authorize,only: [:new,:index]
+  def no_grp
+    @transaction_nil=current_user.transactions.where(group_id: nil)
+  end
   def index
-      @transactions=current_user.transactions.all.order('created_at DESC')
+      @transactions = current_user.transactions.where.not(group_id: nil).order('created_at DESC')
   end
   def new
     @transaction= Transaction.new
+  end
+  def show
+    @transaction = Transaction.find_by(id: params[:id])
   end
   def create
     @transaction=current_user.transactions.build(transaction_params)
@@ -17,6 +23,7 @@ class TransactionsController < ApplicationController
     end
     
   end
+  
   private
   def transaction_params
     params.require(:transaction).permit(:name,:amount,:group_id)

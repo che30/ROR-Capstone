@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authorize,only: [:new,:index,:show]
+  before_action :authorize,only: [:index]
   def new
     @user= User.new
   end

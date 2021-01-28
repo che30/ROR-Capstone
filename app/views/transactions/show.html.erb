@@ -1,0 +1,13 @@
+<section class="d-flex justify-content-between border   my-2">
+  <div class="d-flex">
+    
+    <% if @transaction.group %>
+  <div><img src="<%=@transaction.group.icon%>" alt="" class="w-25"></div>
+    <% end %>
+  <div><ul class="list-unstyled"><li><%=@transaction.name%></li>
+  <li><%=@transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></li>
+  </ul>
+  </div>
+  </div>
+  <div>$<%=@transaction.amount%></div>
+  </section>
