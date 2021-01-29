@@ -1,4 +1,6 @@
 
+<% content_for :title, 'NEW GROUP' %>
+<div class="bg-white py-3 pb-5">
 <%= form_for @group, html: { class: "mt-5 mx-3" } do |f| %>
 
   <%= f.text_field :name, class: "form-control mb-3", placeholder: "Name" %>
@@ -8,14 +10,14 @@
       <li class="btn btn-light p-0 m-1">
         <%= f.radio_button :icon, @icons[25]['link'] %>
         <%= f.label :icon, value: @icons[25]['link'], class: "w-100 h-100 py-2" do %>
-          <img src="<%= @icons[25]['link']%>" alt="">
+          <img src="<%= @icons[25]['link']%>" alt="" class="w-50">
         <% end %>
       </li>
     <% 1.upto(15) do |i| %>
       <li class="btn btn-light p-0 m-1">
         <%= f.radio_button :icon, @icons[i]['link'] %>
         <%= f.label :icon, value: @icons[i]['link'], class: "w-100 h-100 py-2" do %>
-          <img src="<%= @icons[i]['link']%>" alt="">
+          <img src="<%= @icons[i]['link']%>" alt=""class="w-50">
         <% end %>
       </li>
     <% end %>
@@ -25,3 +27,4 @@
   <%= render  partial: 'errors' %>
 
 <% end %>
+</div>
