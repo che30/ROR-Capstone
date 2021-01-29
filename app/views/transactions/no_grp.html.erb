@@ -9,18 +9,13 @@
 </h2>
 <% @transaction_nil.each do |transaction| %>
   <section class="d-flex justify-content-between border bg-white py-3 mx-2 my-3 ">
-    <div class="d-flex">
-      <div>
-        <ul class="list-unstyled d-flex">
-          <li class="mr-5">
-            <%=transaction.name%>
-          </li>
-          <li>
-            <%=transaction.created_at.strftime('%d %b %Y at %l:%M%P')%>
-          </li>
-        </ul>
-      </div>
+    <div>
+      <%=transaction.name%>
     </div>
+      <div>
+        <%=transaction.created_at.strftime('%d %b %Y at %l:%M%P')%>
+      </div>
+   
     <div>$<%=transaction.amount%>
     </div>
   </section>

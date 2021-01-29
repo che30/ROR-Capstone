@@ -1,8 +1,10 @@
+<div class="bg-white">
+<% content_for :title, "ALL Groups" %>
    <% @groups.each do |group| %>
-   <%= link_to(group_url(group.id), class: "text-decoration-none") do %>
-<section class="d-flex justify-content-between border my-2">
+   <%= link_to(group_url(group.id), class: "text-decoration-none text-dark") do %>
+<section class="d-flex justify-content-between align-items-center align-content-center border my-2 py-4">
    
-   <div>   <img src="<%=group.icon%>" alt=""class="w-25"></div>
+   <div>   <img src="<%=group.icon%>" alt=""class="w-50"></div>
    <div>   <%=group.name%></div>
     <div>  <%= group.created_at.strftime('%d %b %Y')%></div>
       
@@ -11,6 +13,8 @@
 
 <% end %>
 <% end %>
- <%= link_to 'new group', new_group_path, class:'btn btn-primary' %>
-
- 
+ <!-- <%= link_to 'new group', new_group_path, class:'btn btn-primary' %> -->
+ <div class="bg-success py-3">
+   <%= link_to 'new group' , new_group_path, class:'btn btn-transact text-white border w-50 py-3 ' %>
+ </div>
+</div>
