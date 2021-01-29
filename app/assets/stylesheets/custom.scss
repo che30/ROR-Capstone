@@ -1,0 +1,31 @@
+ body{
+   background: rgb(32,26,145);
+ background: linear-gradient(90deg, rgba(32,26,145,1) 0%, rgba(167,167,189,1) 45%, rgba(104,122,190,1) 57%, rgba(29,67,191,1) 67%);
+ }
+//  user new
+ .user-new-padding {
+   padding: 100px 100px;
+ }
+ .user-new-btn-log{
+   padding: 20px 100px;
+ }
+ // user show
+.user-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+.user-show
+.user-show a:link, a:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  }
+  
+  .user-show a:hover, a:active {
+    background-color: rgb(41, 143, 23);
+  }

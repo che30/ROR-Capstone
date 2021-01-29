@@ -1,15 +1,16 @@
    <% @groups.each do |group| %>
-<section class="d-flex justify-content-between">
+   <%= link_to(group_url(group.id), class: "text-decoration-none") do %>
+<section class="d-flex justify-content-between border my-2">
    
    <div>   <img src="<%=group.icon%>" alt=""class="w-25"></div>
    <div>   <%=group.name%></div>
-    <div>  <%= group.created_at.strftime('%d %b %Y at %l:%M%P')%></div>
+    <div>  <%= group.created_at.strftime('%d %b %Y')%></div>
       
       
 </section>
+
+<% end %>
 <% end %>
  <%= link_to 'new group', new_group_path, class:'btn btn-primary' %>
-  
-  
-  
-  
+
+ 

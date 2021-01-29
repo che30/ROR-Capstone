@@ -1,19 +1,21 @@
-
+<% content_for :title, "LOGIN",class: "text-white" %>
+<div class="bg-white user-new-padding">
 <% if !current_user %>
 <div class="mt-5">
  <%= form_with(url: login_path, scope:
 :session, local: true) do |f| %>
    <div class="form-group">
-     <%= f.label :username,class:'col-md-4 control-label' %>
+     <%= f.label :username,class:'col-md-4 control-label ' %>
    <div>
     <%= f.text_field :username,class:'form-control' %></div>
    </div>
   </div>
    <div class="form-group">
-    <%= f.submit "Log in", class:"btn btn-primary my-4 mx-auto d-block" %>
+    <%= f.submit "Log in", class:"btn btn-primary my-4 mx-auto d-block px-5 py-2" %>
   </div>
 </div>
 <% end %>
+</div>
 <% else %>
   <ul class="list-unstyled">
   <li><%= link_to 'All my transactions',transactions_path %> </li>

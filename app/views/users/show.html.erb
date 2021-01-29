@@ -1,7 +1,6 @@
-<ul class="list-unstyled">
-  <li><%= link_to 'All my transactions',transactions_path %> </li>
+<ul class="list-unstyled user-show">
+  <li><%= link_to 'All my transactions',transactions_path,class: "text-white" %> </li>
   <li>
-  <%= link_to 'All my external transactions', transactions_no_grp_path%></li>
-  <li><%= link_to 'All groups',groups_path%></li>
-  <li></li>
+  <%= link_to 'All my external transactions', transactions_no_grp_path,class: "text-white"%></li>
+  <li><%= link_to 'All groups',groups_path,class: "text-white"%></li>
 </ul>
