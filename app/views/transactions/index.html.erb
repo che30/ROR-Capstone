@@ -9,7 +9,8 @@
   </div>
 </h2>
 <% @transactions.each do |transaction| %>
-  <section class="d-flex justify-content-between border  bg-white py-3 mx-2 my-3">
+<%= link_to(transaction_url(transaction.id), class: "text-decoration-none text-dark") do %>
+  <section class="d-flex justify-content-between border py-3 mx-2 my-3 bg-white">
     <div class="d-flex">
       <div class="border"><img src="<%=transaction.group.icon%>" alt="" class="w-25 "></div>
       <div>
@@ -27,9 +28,10 @@
     </div>
   </section>
   <% end %>
+  <% end %>
+  
   <div class="bg-success py-3">
-    <%= link_to 'new transaction' , new_transaction_path, class:'btn text-white border w-50 py-3 ' %>
+    <%= link_to 'new transaction' , new_transaction_path, class:'btn btn-transact text-white border w-50 py-3 ' %>
   </div>
  
       </div>
-    </div>
