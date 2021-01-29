@@ -2,6 +2,18 @@
    background: rgb(32,26,145);
  background: linear-gradient(90deg, rgba(32,26,145,1) 0%, rgba(167,167,189,1) 45%, rgba(104,122,190,1) 57%, rgba(29,67,191,1) 67%);
  }
+ //transactions
+ .btn {margin-left: 27% 
+ }
+ .bg-light-white {
+   background-color: rgba(255, 255, 255, 0.945);
+ }
+ .light-white {
+   color: rgb(202, 193, 193);
+ }
+ .transaction-new-padding{
+   padding: 100px 10px;
+ }
 //  user new
  .user-new-padding {
    padding: 100px 100px;
@@ -28,4 +40,5 @@
   
   .user-show a:hover, a:active {
     background-color: rgb(41, 143, 23);
+    padding: 10px 10px;
   }

@@ -1,17 +1,18 @@
-<h2 class="d-flex justify-content-between">
+<div class="bg-light-white">
+<h2 class="d-flex justify-content-between bg-white">
   <div>
-    Total amout
+    <span class="light-white">  Total amount</span>
   </div>
   <div>
     $<%=sum_amount(@transaction_nil)%>
   </div>
 </h2>
 <% @transaction_nil.each do |transaction| %>
-  <section class="d-flex justify-content-between border   my-2">
+  <section class="d-flex justify-content-between border bg-white py-3 mx-2 my-3 ">
     <div class="d-flex">
       <div>
-        <ul class="list-unstyled">
-          <li>
+        <ul class="list-unstyled d-flex">
+          <li class="mr-5">
             <%=transaction.name%>
           </li>
           <li>
@@ -24,6 +25,8 @@
     </div>
   </section>
   <% end %>
-
-    <%= link_to 'new transaction' , new_transaction_path, class:'btn btn-primary' %>
+  <div class="bg-success py-3">
+    <%= link_to 'new transaction' , new_transaction_path, class:'btn text-white border w-50 py-3 ' %>
+  </div>
       </div>
+    </div>
