@@ -1,12 +1,17 @@
 class UsersController < ApplicationController
-  before_action :authorize,only: [:index]
-  def new
-    @user= User.new
+  before_action :authorize, only: %i[index]
+  def homepage
+    @user = User.new
   end
+
+  def new
+    @user = User.new
+  end
+
   def create
     @user = User.new(user_params)
     if @user.save
-    log_in @user
+      log_in @user
       flash[:success] = 'user successfully created'
       redirect_to @user
     else
@@ -14,11 +19,14 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
+
   def show
-    @user=User.find(params[:id])
+    @user = User.find(params[:id])
   end
+
   private
+
   def user_params
-  params.require(:user).permit(:username,:avatar)
+    params.require(:user).permit(:username, :avatar)
   end
 end

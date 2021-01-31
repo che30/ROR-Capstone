@@ -1,5 +1,5 @@
 class TransactionsController < ApplicationController
-  before_action :authorize, only: %i[new,index]
+  before_action :authorize, only: %i[new index]
   def no_grp
     @transaction_nil=current_user.transactions.where(group_id: nil)
   end
