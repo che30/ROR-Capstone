@@ -1,4 +1,22 @@
+@font-face {
+  font-family: 'FontsFree-Net-Proxima-Nova-Bold';
+  src: url("/assets/FontsFree-Net-Proxima-Nova-Bold.otf");
+}
+@font-face {
+  font-family: 'proximanova-light';
+  src: url("/assets/proximanova-light.otf");
+}
+
+
+// FontsFree-Net-Proxima-Nova-Light
+.font-nova-bold {
+  font-family: 'FontsFree-Net-Proxima-Nova-Bold',arial, sans-serif;
+}
+.font-nova-light{
+ font-family: 'proximanova-light',arial, sans-serif;
+}
  body{
+   font-family: 'FontsFree-Net-Proxima-Nova-Bold','proximanova-light',arial, sans-serif;
    background: rgb(32,26,145);
  background: linear-gradient(90deg, rgba(32,26,145,1) 0%, rgba(167,167,189,1) 45%, rgba(104,122,190,1) 57%, rgba(29,67,191,1) 67%);
  }

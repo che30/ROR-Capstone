@@ -42,12 +42,12 @@
    </div>
     </nav>
     <% if flash[:notice] %>
-    <div class="success text-center"><%= flash[:notice] %></div>
+    <div class="text-white text-center"><%= flash[:notice] %></div>
     <% else %>
     <div class="danger text-center"><%= flash.now[:alert] %></div>
     <% end %>
     <div class="container">
-     <h1 class="text-center text-white"> <%= yield(:title) %></h1>
+     <h1 class="text-center text-white font-nova-bold"> <%= yield(:title) %></h1>
       <%= yield %>
     </div>
  

@@ -2,9 +2,9 @@
 <div class="bg-light-white">
 <h2 class="d-flex justify-content-between bg-white">
   <div >
-  <span class="light-white">  Total amount</span>
+  <span class="font-nova-light">  Total amount</span>
   </div>
-  <div>
+  <div class="font-nova-bold">
     $<%=sum_amount(@transactions)%>
   </div>
 </h2>
@@ -12,19 +12,21 @@
 <%= link_to(transaction_url(transaction.id), class: "text-decoration-none text-dark") do %>
   <section class="d-flex justify-content-between border py-3 mx-2 my-3 bg-white">
     <div class="d-flex">
-      <div class="border"><img src="<%=transaction.group.icon%>" alt="" class="w-25 "></div>
-      <div>
-        <ul class="list-unstyled ml-3">
-          <li>
+      <div class="border"><img src="<%=transaction.group.icon%>" alt="" class="w-75 pl-4 "></div>
+      <div class="d-flex flex-column justify-content-between ml-3">
+        <div>
+          <span class="font-nova-light">
             <%=transaction.name%>
-          </li>
-          <li>
+          </span>
+        </div>
+        <div>
+          <span>
             <%=transaction.created_at.strftime('%d %b %Y at %l:%M%P')%>
-          </li>
-        </ul>
+          </span>
+        </div>
       </div>
     </div>
-    <div>$<%=transaction.amount%>
+    <div class="font-nova-bold">$<%=transaction.amount%>
     </div>
   </section>
   <% end %>
