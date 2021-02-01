@@ -1,2 +1,2 @@
 # ROR-Capstone
-![screenshot](./assets/images/ROR-ERD.png)
+![screenshot](app/assets/images/ROR-ERD.png)
