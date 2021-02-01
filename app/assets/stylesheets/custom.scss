@@ -66,8 +66,20 @@
     font-size: 100px;
   }
   .mh {
-    height: 300px;
+    margin: 200px 0 0 0;
+    height: 200px;
+    margin-bottom: -100px;
+  }
+  .w-h {
+  width: 1115px;
   }
   .cookie-cursive{
     font-family: 'Cookie', cursive;
   }
+@media (max-width: 567px)
+{
+  //hompage
+  .w-h {
+    width: 455px;
+    }
+}
