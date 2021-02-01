@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -12,7 +14,7 @@
 
   <body>
     <nav class="mt-4">
-   <div class="list-unstyled d-flex justify-content-center">
+   <div class="list-unstyled d-flex ml-5 ">
     <% if current_user %>
       
       <div class="drop-down relative">
@@ -26,10 +28,6 @@
          
         </div> 
       </div>
-      <div> <%= image_tag current_user.avatar.url(:thumb) %> </div>
-     <ul class="list-unstyled">
-     <li> </li></ul>
-
       <% else %>
       <ul class="list-unstyled d-flex flex-row ml-auto">
       <li class="mr-2">

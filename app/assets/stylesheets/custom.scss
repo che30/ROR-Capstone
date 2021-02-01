@@ -43,8 +43,6 @@
 .user-show {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   height: 500px;
 }
 .user-show
@@ -59,4 +57,7 @@
   .user-show a:hover, a:active {
     background-color: rgb(41, 143, 23);
     padding: 10px 10px;
+  }
+  .cookie-cursive{
+    font-family: 'Cookie', cursive;
   }
