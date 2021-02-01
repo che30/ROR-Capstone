@@ -24,7 +24,7 @@
   </ul>
 
   <%= f.submit class: "btn btn-primary my-4 mx-auto d-block" %>
-  <%= render  partial: 'errors' %>
+  <p class=" text-muted w-75 mx-auto"><%=display_errors(@group)%></p>
 
 <% end %>
 </div>

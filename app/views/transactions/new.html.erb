@@ -21,7 +21,7 @@
 <div class="form-group">
   <div class=" bg-white py-1" data-turbolinks="false">
     <%= f.submit class: "btn btn-primary my-4 mx-auto d-block px-3" %>
-    <%= render partial: 'errors' %>
+    <p class=" w-75 mx-auto"><%=display_errors(@transaction)%></p>
   </div>
 </div>
 </div>
