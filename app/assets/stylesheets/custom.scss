@@ -17,8 +17,9 @@
 }
  body{
    font-family: 'FontsFree-Net-Proxima-Nova-Bold','proximanova-light',arial, sans-serif;
-   background: rgb(32,26,145);
- background: linear-gradient(90deg, rgba(32,26,145,1) 0%, rgba(167,167,189,1) 45%, rgba(104,122,190,1) 57%, rgba(29,67,191,1) 67%);
+  //  background-color: #3778c2;
+   color: #3778c2;
+//  background: linear-gradient(90deg, rgba(32,26,145,1) 0%, rgba(167,167,189,1) 45%, rgba(104,122,190,1) 57%, rgba(29,67,191,1) 67%);
  }
  //transactions
  .btn-transact {margin-left: 27% 
@@ -44,8 +45,21 @@
   display: flex;
   flex-direction: column;
   height: 500px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
-.user-show
+.user-show-gradient{
+  background: linear-gradient(
+40deg
+, #3190e3, #163150);
+padding-top: 50px;
+margin-top: -60px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
 .user-show a:link, a:visited {
   color: white;
   padding: 14px 25px;
@@ -81,5 +95,9 @@
   //hompage
   .w-h {
     width: 455px;
+    }
+    .user-show {
+      height: 310px;
+      
     }
 }

@@ -1,9 +1,19 @@
-<ul class="list-unstyled d-flex flex-column user-show">
-  <li class="list-unstyled"> <%= image_tag current_user.avatar.url(:thumb) %> 
-    <p class="text-white"><%= current_user.username%></p>
-  </li class="list-unstyled ">
-  <li class="border-bottom "><%= link_to 'All my transactions',transactions_path,class: "text-white text-decoration-none" %> </li>
-  <li class="border-bottom ">
-  <%= link_to 'All my external transactions', transactions_no_grp_path,class: "text-white text-decoration-none"%></li>
-  <li class="my-3"><%= link_to 'All groups',groups_path,class: "text-white text-decoration-none"%></li>
-</ul>
+<div class="row justify-content-around ">
+  <div class="col-3 bg-primary ">
+    
+  </div>
+  <div class="col-6 user-profile user-show-gradient">
+    <div class="align-self-center"> <%= image_tag current_user.avatar.url(:thumb) %> 
+      <p class="text-white"><%= current_user.username%></div>
+    <ul class="list-unstyled user-show">
+      </li class="list-unstyled ">
+      <li class="border-bottom "><%= link_to 'All my transactions',transactions_path,class: "text-white text-decoration-none" %> </li>
+      <li class="border-bottom ">
+      <%= link_to 'All my external transactions', transactions_no_grp_path,class: "text-white text-decoration-none"%></li>
+      <li class="my-3"><%= link_to 'All groups',groups_path,class: "text-white text-decoration-none"%></li>
+    </ul>
+  </div>
+  <div class="col-3 bg-primary">
+
+  </div>
+</div>
