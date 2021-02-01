@@ -1,15 +1,18 @@
-<section class= "bg-white py-5 ">
-<h3 class="cookie-cursive font-nova-bold fs-1 text-center">group our transactions </h3>
+<section class= "bg-white homepage-section">
+<h3 class="cookie-cursive font-nova-bold fs text-center">welcome to group our transactions </h3>
 <% if current_user %>
  <div class="text-center">
   <%= link_to 'login', user_path(current_user),class: "btn btn-primary  py-2 px-4" %>
  </div>
   <% else %>
-<div class="text-center">
-<%= link_to 'login', login_path, class: "btn btn-primary px-5 py-2"%>
+  <div class="d-flex justify-content-around flex-column align-items-center mh">
+ 
+<div >
+<%= link_to 'login', login_path, class: "btn btn-primary px-5 py-2 "%>
 </div>
-<div class="text-center">
+<div>
   <%= link_to 'signup', signup_path,class: "btn btn-primary px-4 py-2" %>
 </div>
+ </div>
 <% end %>
 </section>

@@ -1,12 +1,7 @@
 <div class="bg-white user-new-padding">
   <% content_for :title, "New User" %>
     <%= form_with model: @user,class: 'form-horizontal text-center' ,html: { multipart: true } do |f| %>
-      <div class="form-group">
-        <%= f.label :username,class:'col-md-4 control-label' %>
-          <div>
-            <%= f.text_field :username,class:'form-control' %>
-          </div>
-      </div>
+       <%= render "shared/username",f: f %>
       <div class="form-group">
         <%= f.label :avatar,class: 'col-md-4 control-label' %>
           <div>
