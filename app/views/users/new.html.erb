@@ -1,3 +1,4 @@
+<%= render 'shared/sign_in_signup' %>
 <div class="bg-white user-new-padding">
   <% content_for :title, "New User" %>
     <%= form_with model: @user,class: 'form-horizontal text-center' ,html: { multipart: true } do |f| %>
