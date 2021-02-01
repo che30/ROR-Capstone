@@ -13,7 +13,7 @@ class GroupsController < ApplicationController
   def create
     @group  = current_user.groups.build(group_params)
     if @group.save
-      flash[:success]='group created with succes'
+      flash[:notice] = 'group created with succes'
       redirect_to groups_path
     else
       flash.now[:alert] = 'some errors while saving the form'
