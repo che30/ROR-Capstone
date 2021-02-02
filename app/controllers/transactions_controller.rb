@@ -1,7 +1,7 @@
 class TransactionsController < ApplicationController
   before_action :authorize, only: %i[new index]
   def no_grp
-    @transaction_nil=current_user.transactions.where(group_id: nil)
+    @transaction_nil = current_user.transactions.where(group_id: nil)
   end
 
   def index
@@ -9,7 +9,7 @@ class TransactionsController < ApplicationController
   end
 
   def new
-    @transaction= Transaction.new
+    @transaction = Transaction.new
   end
 
   def show
@@ -17,11 +17,11 @@ class TransactionsController < ApplicationController
   end
 
   def create
-    @transaction=current_user.transactions.build(transaction_params)
+    @transaction = current_user.transactions.build(transaction_params)
     if @transaction.save
       flash[:notice] = 'transaction was succesffuly created'
       redirect_to @transaction
-    else 
+    else
       flash.now[:danger] = 'error with some fields'
       render :new
     end
@@ -30,6 +30,6 @@ class TransactionsController < ApplicationController
   private
 
   def transaction_params
-    params.require(:transaction).permit(:name,:amount,:group_id)
+    params.require(:transaction).permit(:name, :amount, :group_id)
   end
 end

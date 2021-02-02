@@ -9,7 +9,7 @@ RSpec.describe User, type: :model do
       user = User.new(username: '').save
       expect(user).to eql(false)
     end
-    it 'ensures length of username should at least 3' do 
+    it 'ensures length of username should at least 3' do
       user = User.new(username: 'c').save
       expect(user).to eql(false)
     end
@@ -27,5 +27,4 @@ RSpec.describe User, type: :model do
       expect(@user2.valid?).to eq false
     end
   end
-
 end

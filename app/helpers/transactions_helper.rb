@@ -1,9 +1,7 @@
 module TransactionsHelper
   def sum_amount(transactions)
     sum = 0
-    if transactions
-      transactions.each { |t| sum += t.amount }
-    end
+    transactions&.each { |t| sum += t.amount }
     sum
   end
 end

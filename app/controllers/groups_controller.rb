@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   include GroupsHelper
-  before_action :authorize,only: %i[new index]
+  before_action :authorize, only: %i[new index]
   def new
     @group = Group.new
     @icons = icons
@@ -11,7 +11,7 @@ class GroupsController < ApplicationController
   end
 
   def create
-    @group  = current_user.groups.build(group_params)
+    @group = current_user.groups.build(group_params)
     if @group.save
       flash[:notice] = 'group created with succes'
       redirect_to groups_path

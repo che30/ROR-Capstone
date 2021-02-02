@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Group, type: :model do
-  let(:user) {User.create(username: 'blanco')}
-  let(:group) {user.groups.create(name: 'abc', icon: 'cde')}
+  let(:user) { User.create(username: 'blanco') }
+  let(:group) { user.groups.create(name: 'abc', icon: 'cde') }
   context 'testing group controller method and models' do
     it 'expects a new group to created successfuly' do
       expect(group.valid?).to eq(true)
@@ -20,7 +20,7 @@ RSpec.describe Group, type: :model do
       expect(group2.valid?).to eq false
     end
     it 'creates a group not needing an icon' do
-      group1=user.groups.create(name: 'abc', icon: '')
+      group1 = user.groups.create(name: 'abc', icon: '')
       expect(group1.icon.nil? & group1.valid?).to eq false
     end
   end
