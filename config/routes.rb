@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get '/users/homepage', to: 'users#homepage'
   resources :transactions
   resources :groups
-  resources :transacts
   root to: 'users#homepage'
   get '/signup', to: 'users#new'
   get '/login', to: 'sessions#new'
