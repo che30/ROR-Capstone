@@ -1,10 +1,10 @@
 // Place all the styles related to the transactions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.center-form
-{
+.center-form {
   margin-left: 20%;
 }
+
 .drop-down {
   display: inline-block;
 }
@@ -24,7 +24,7 @@
 }
 
 .drop-down-content a:hover {
-  background-color: rgb(41, 143, 23);;
+  background-color: rgb(41, 143, 23);
 }
 .drop-down:hover .drop-down-content { display: block; }
 .drop-down:hover .article-button { background-color: #7a7475; }
