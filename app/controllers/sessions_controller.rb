@@ -1,5 +1,8 @@
 class SessionsController < ApplicationController
-  def new; end
+  def new
+    @user = User.new
+  end
+
   def create
     @user = User.find_by(username: params[:session][:username])
     if @user
@@ -7,7 +10,7 @@ class SessionsController < ApplicationController
       flash[:notice] = 'logged in with success'
       redirect_to user_path(current_user)
     else
-      flash.now[:danger] = 'invalid username'
+      flash.now[:alert] = 'invalid username'
       render 'new'
     end
   end
