@@ -29,14 +29,14 @@ This project  is based on a mobile version app for grouping transactions by goal
 ## Built With
 
 - Ruby v2.7.2
-- Ruby on Rails v6.1.1'
+- Ruby on Rails v6.1.1
 
 ## Getting Started
 
 ### Prerequisites
 
 Ruby: 2.7.2
-Rails: 6.1.1'
+Rails: 6.1.1
 Postgres: >=9.5
 
 To get a local copy up and running follow these simple example steps.
