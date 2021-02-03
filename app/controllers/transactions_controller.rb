@@ -5,7 +5,7 @@ class TransactionsController < ApplicationController
   end
 
   def index
-    @transactions = current_user.transactions.where.not(group_id: nil).order('created_at DESC')
+    @transactions = current_user.transactions.includes(:group).where.not(group_id: nil).order('created_at DESC')
   end
 
   def new
