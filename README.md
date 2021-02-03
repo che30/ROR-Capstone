@@ -63,6 +63,13 @@ Start server by typing on your terminal:
 
 Open `http://localhost:3000/` in your browser.
 
+### Run tests
+Type the command
+```
+    rspec --format documentation
+```
+in order to execute rspec tests
+
 ## Author
 👤 **Che Nsoh Blanchard**
 
