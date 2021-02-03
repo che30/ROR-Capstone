@@ -24,8 +24,6 @@ This project  is based on a mobile version app for grouping transactions by goal
 ![screenshot](app/assets/images/all_groups.png)
 ![screenshot](app/assets/images/all_external_groups.png)
 ![screenshot](app/assets/images/new_group.png)
-![screenshot](app/assets/images/new_transaction.png)
-![screenshot](app/assets/images/user-show.png)
 # Presentations
 ##  Live Demo
 [Live Demo Link](https://frozen-plateau-21154.herokuapp.com/)
@@ -33,7 +31,7 @@ This project  is based on a mobile version app for grouping transactions by goal
 [Video Presentation Link](https://www.loom.com/share/99a5c481d46242e294dd935cfe3e6591)
 ## Built With
 
-- Ruby v2.7.0
+- Ruby v2.7.2
 - Ruby on Rails v5.2.4
 
 ## Getting Started
