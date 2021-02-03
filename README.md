@@ -21,9 +21,6 @@ This project  is based on a mobile version app for grouping transactions by goal
 ![screenshot](app/assets/images/home.png)
 ![screenshot](app/assets/images/login.png)
 ![screenshot](app/assets/images/all_transactions.png)
-![screenshot](app/assets/images/all_groups.png)
-![screenshot](app/assets/images/all_external_groups.png)
-![screenshot](app/assets/images/new_group.png)
 # Presentations
 ##  Live Demo
 [Live Demo Link](https://frozen-plateau-21154.herokuapp.com/)
