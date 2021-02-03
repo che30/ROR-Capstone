@@ -5,20 +5,20 @@
   <div>
     <span class="font-nova-light">  Total amount</span>
   </div>
-  <div>
-   <span class="font-nova-bold"> $<%=sum_amount(@transaction_nil)%></span>
+  <div class="mr-1">
+   <span class="font-nova-bold "> $<%=sum_amount(@transaction_nil)%></span>
   </div>
 </h2>
 <% @transaction_nil.each do |transaction| %>
   <section class="d-flex justify-content-between border bg-white py-3 mx-2 my-3 ">
-    <div>
+    <div class="ml-2">
       <%=transaction.name%>
     </div>
       <div class="font-nova-light">
         <%=transaction.created_at.strftime('%d %b %Y at %l:%M%P')%>
       </div>
    
-    <div class="font-nova-bold">$<%=transaction.amount%>
+    <div class="font-nova-bold mr-2">$<%=transaction.amount%>
     </div>
   </section>
   <% end %>

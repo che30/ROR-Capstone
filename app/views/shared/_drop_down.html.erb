@@ -4,10 +4,10 @@
   <button type="button" class="article-button border px-2"><i class="fa fa-navicon"></i></button>
   <div class="border text-center rounded absolute drop-down-content">
    <%=current_user.username %>
-    <%= link_to 'All my transactions',transactions_path,class: "text-white" %>
-    <%= link_to 'All my external transactions', transactions_no_grp_path,class: "text-white"%>
-    <%= link_to 'All groups',groups_path,class: "text-white"%>
-   <%= link_to 'logout', logout_path,method: :delete,class: "text-white" %>
+    <%= link_to 'All my transactions',transactions_path,class: "text-white text-decoration-none" %>
+    <%= link_to 'All my external transactions', transactions_no_grp_path,class: "text-white text-decoration-none"%>
+    <%= link_to 'All groups',groups_path,class: "text-white text-decoration-none"%>
+   <%= link_to 'logout', logout_path,method: :delete,class: "text-white text-decoration-none" %>
    
   </div> 
 </div>
