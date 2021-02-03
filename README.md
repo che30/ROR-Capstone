@@ -30,6 +30,7 @@ This project  is based on a mobile version app for grouping transactions by goal
 ##  Live Demo
 [Live Demo Link](https://frozen-plateau-21154.herokuapp.com/)
 ##  Video Presentation
+[Video Presentation Link](https://www.loom.com/share/99a5c481d46242e294dd935cfe3e6591)
 ## Built With
 
 - Ruby v2.7.0
