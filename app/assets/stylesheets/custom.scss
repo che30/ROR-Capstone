@@ -19,11 +19,14 @@
 
 body {
   font-family: 'FontsFree-Net-Proxima-Nova-Bold', 'proximanova-light', arial, sans-serif;
-  //  background-color: #3778c2;
   color: #3778c2;
-  //  background: linear-gradient(90deg, rgba(32,26,145,1) 0%, rgba(167,167,189,1) 45%, rgba(104,122,190,1) 57%, rgba(29,67,191,1) 67%);
+ 
 }
 //transactions
+ .w-t-s {
+  width: 1112px;
+}
+
 .btn-transact {
   margin-left: 27%;
 }
@@ -122,7 +125,10 @@ a:active {
   .w-h {
     width: 455px;
   }
-
+  .w-t-s {
+    width: 465px;
+  }
+  
   .user-show {
     height: 490px;
   }

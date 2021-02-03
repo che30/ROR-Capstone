@@ -17,7 +17,7 @@
 <div>
   <ul class="list-unstyled">
     <li>
-      <span class="font-weight-bold">$<%= number_with_precision(@transactions.sum(:amount), :precision => 2) %></span>
+      <span class="font-weight-bold mr-3">$<%= number_with_precision(@transactions.sum(:amount), :precision => 2) %></span>
     </li>
     <li>
     
@@ -29,12 +29,12 @@
   </ul>
 </div>
 </div>
-<div  class="d-flex justify-content-between py-2 mx-5 border-bottom ">
-  <div  >
-   <span> TOTAL AMOUNT</span>
+<div  class="d-flex justify-content-between py-2  border-bottom ">
+  <div class="ml-5" >
+   <span > TOTAL AMOUNT</span>
   </div>
   <div>
-    <span class="font-weight-bold">$<%= number_with_precision(@transactions.sum(:amount), :precision => 2) %></span>
+    <span class="font-weight-bold mr-5 pr-3">$<%= number_with_precision(@transactions.sum(:amount), :precision => 2) %></span>
   </div>
 </div>
 <div class="bg-success py-3 mt-5">

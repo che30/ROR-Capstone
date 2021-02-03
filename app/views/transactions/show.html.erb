@@ -2,28 +2,29 @@
 <div class="bg-white ">
 <section class=" border  bg-white">
     <% if @transaction.group %>
- <div class="d-flex align-items-center bg-white align-content-center border py-3">
+ <div class="d-flex justify-content-between align-items-center bg-white align-content-center border py-3">
   <div><img src="<%=@transaction.group.icon%>" alt="" class="w-50 border">
     <% end %>
   </div>
-  <div class="bg-white"><span><%=@transaction.name%></span>
+  <div class="bg-white pl-2"><span><%=@transaction.name%></span>
   </div>
   <div class="transaction-id-info bg-light-white d-flex justify-content-between py-3 border-bottom">
-    <div>
+    <div class="ml-2">
       <span> Transaction No.<%=@transaction.id%></span>
     </div>
-    <div>
+    <div class="mr-3">
  <span> <%=@transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></span>
     </div>
   </div>
   <div class="d-flex justify-content-between bg-light-white py-3">
-    <div class="amount">
+    <div class="amount ml-2">
       Amount
     </div>
-    <div>$<%=@transaction.amount%>
+    <div class="mr-3">$<%=@transaction.amount%>
     </div>
   </div>
-  <div class="bg-success py-3">
-    <%= link_to 'new transaction' , new_transaction_path, class:'btn btn-transact text-white border w-50 py-3 ' %>
-  </div>
+</div>
+<div class="bg-success w-t-s mx-auto py-3">
+  <%= link_to 'new transaction' , new_transaction_path, class:'btn btn-transact text-white border w-50 py-3 ' %>
+</div>
 </div>
