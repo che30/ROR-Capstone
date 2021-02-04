@@ -85,7 +85,7 @@ body {
       #163150
     );
   padding-top: 30px;
-  margin-top: -70px;
+  margin-top: -90px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -152,12 +152,20 @@ a:active {
   }
 
   .user-show-gradient {
-    padding-top: 50px;
-    margin-top: -60px;
+    padding-top: 30px;
+    margin-top: -90px;
     padding-bottom: 50px;
   }
 
   .homepage-section {
     padding-bottom: 200px;
   }
+}
+@media (min-width: 568px) and (max-width: 768px) {
+  .user-show-gradient {
+    // padding-top: 30px;
+    // margin-top: -90px;
+    display: none;
+  }
+
 }
