@@ -16,7 +16,7 @@ class GroupsController < ApplicationController
       flash[:notice] = 'group created with succes'
       redirect_to groups_path
     else
-      flash.now[:alert] = 'some errors while saving the form'
+      flash.now[:alert] = 'there are some errors while saving the form'
       @icons = icons
       render 'new'
     end

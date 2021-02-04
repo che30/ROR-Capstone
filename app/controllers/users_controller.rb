@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       flash[:notice] = 'user successfully created'
       redirect_to @user
     else
-      flash.now[:error] = "Error: #{@user.errors.full_messages.join(', ')}"
+      flash.now[:alert] = "Error: #{@user.errors.full_messages.join(', ')}"
       render 'new'
     end
   end

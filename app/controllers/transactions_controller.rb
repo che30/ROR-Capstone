@@ -22,7 +22,7 @@ class TransactionsController < ApplicationController
       flash[:notice] = 'transaction was succesffuly created'
       redirect_to @transaction
     else
-      flash.now[:danger] = 'error with some fields'
+      flash.now[:danger] = 'there are some errors with some fields'
       render :new
     end
   end
