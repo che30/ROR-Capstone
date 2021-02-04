@@ -1,6 +1,8 @@
-<%= render 'shared/sign_in_signup' %>
+<div class="d-flex justify-content-between">
+  <p class="text-white mx-auto pl-5">NEW USER</p>
+  <div><%= render 'shared/sign_in_signup' %></div>
+ </div>
 <div class="bg-white user-new-padding">
-  <% content_for :title, "New User" %>
     <%= form_with model: @user,class: 'form-horizontal text-center' ,html: { multipart: true } do |f| %>
        <%= render "shared/username",f: f %>
       <div class="form-group">

@@ -12,13 +12,14 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="bg-primary">
+  <body class="bg-primary container-fluid">
     <nav class="mt-4">
+      <div class="text-white text-center"><%= flash_message %></div>
     </nav>
    
-    <div class="text-white text-center"><%= flash_message %></div>
+    
     <div class="container">
-     <h1 class="text-center text-white font-nova-bold"> <%= yield(:title) %></h1>
+      <h1 class="text-center text-white font-nova-bold"> <%= yield(:title) %></h1>
       <%= yield %>
     </div>
  

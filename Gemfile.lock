@@ -260,7 +260,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   bootstrap (~> 4.5, >= 4.5.3)
   byebug
-  capybara (>= 3.26)
+  capybara
   hirb (~> 0.7.3)
   jbuilder (~> 2.7)
   listen (~> 3.3)

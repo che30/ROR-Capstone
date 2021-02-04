@@ -72,6 +72,7 @@ body {
     );
   padding-top: 50px;
   margin-top: -60px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,7 +99,7 @@ a:active {
 }
 //hompage
 .homepage-section {
-  padding-bottom: 400px;
+  padding-bottom: 350px;
 }
 
 .fs {
@@ -136,4 +137,17 @@ a:active {
   .user-new-padding {
     padding: 100px 0 90px 0;
   }
+
+.user-show-gradient {
+  
+  padding-top: 50px;
+  margin-top: -60px;
+  padding-bottom: 50px;
+ 
+}
+.homepage-section {
+  padding-bottom: 200px;
+}
+
+
 }
