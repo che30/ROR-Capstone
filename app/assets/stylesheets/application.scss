@@ -14,3 +14,31 @@
  *= require_self
  */
 @import "bootstrap";
+
+.center-form {
+  margin-left: 20%;
+}
+
+.drop-down {
+  display: inline-block;
+}
+
+.drop-down-content {
+  display: none;
+  right: 500px;
+  bottom: 100px;
+  z-index: 1;
+}
+
+.drop-down-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-down-content a:hover {
+  background-color: rgb(41, 143, 23);
+}
+.drop-down:hover .drop-down-content { display: block; }
+.drop-down:hover .article-button { background-color: #7a7475; }
