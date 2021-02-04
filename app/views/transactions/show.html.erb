@@ -2,7 +2,7 @@
   <p>  <%= render 'shared/drop_down' %></p>
     <h1 class="text-center text-white mx-auto h-t-w">Transaction details</h1>
   </div>
-<section class=" border bg-white p-b-s">
+<section class=" border bg-white p-b">
     <% if @transaction.group %>
  <div class="border py-3">
   <div class="d-flex">
@@ -29,6 +29,6 @@
   </div>
 </div>
 </section>
-<div class="bg-success py-3">
+<div class="bg-success py-3 w-btn">
   <%= link_to 'new group' , new_group_path, class:'btn btn-transact text-white border w-50 py-3 ' %>
 </div>

@@ -3,7 +3,7 @@
    <p>  <%= render 'shared/drop_down' %></p>
      <h1 class="text-center text-white mx-auto h-t-w">ALL GROUPS</h1>
    </div>
-<div class="bg-light-white p-b pt-2">
+<div class="bg-light-white p-b-g pt-2">
    <% @groups.each do |group| %>
    <%= link_to(group_url(group.id), class: "text-decoration-none text-dark") do %>
 <section class="d-flex justify-content-between bg-white  align-items-center align-content-center border mx-3 my-2 py-4">
@@ -18,6 +18,6 @@
 <% end %>
 <% end %>
 </div>
-<div class="bg-success py-3">
+<div class="bg-success py-3 w-btn">
    <%= link_to 'new group' , new_group_path, class:'btn btn-transact text-white border w-50 py-3 ' %>
  </div>

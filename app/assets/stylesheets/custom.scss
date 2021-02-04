@@ -13,7 +13,7 @@
 }
 
 .p-b {
-  padding-bottom: 80px;
+  padding-bottom: 150px;
 }
 // FontsFree-Net-Proxima-Nova-Light
 .font-nova-bold {
@@ -170,7 +170,7 @@ a:active {
     padding-bottom: 275px;
     width: 335px;
   }
-  
+
   .user-show-gradient {
     width: 200px;
   }
@@ -183,5 +183,22 @@ a:active {
 
   .fs {
     font-size: 25px;
+  }
+
+  .p-b {
+    padding: 0 0 280px 0;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .p-b-g {
+    padding: 0 0 305px 0;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .w-btn {
+    margin-right: -15px;
+    margin-left: -15px;
   }
 }
