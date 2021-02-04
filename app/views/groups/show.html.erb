@@ -1,4 +1,42 @@
-<div class="bg-white pt-5">
+<div class="d-flex align-items-center justify-content-start align-items-center">
+  <p>  <%= render 'shared/drop_down' %></p>
+    <h1 class="text-center text-white mx-auto h-t-w">group details</h1>
+  </div>
+<section class=" border bg-white p-b">
+ <div class="border py-3">
+  <div class="d-flex">
+    <div><img src="<%=@group.icon%>" alt="" class="w-50 border">
+    </div>
+    <div ><span><%=@group.name%></span>
+    </div>
+  <div class="bg-danger">
+    <% if !@transactions.blank? %>
+    <span><%=@transactions.first.user.username%></span>
+  <% end %>
+  </div>
+  
+  </div>
+  <div class="transaction-id-info  d-flex justify-content-between py-3">
+    <div class="ml-2">
+      <span> Group No.<%=@group.id%></span>
+    </div>
+    <div class="mr-3">
+ <span> <%=@group.created_at.strftime('%d %b %Y at %l:%M%P')%></span>
+    </div>
+  </div>
+  <div class="d-flex justify-content-between  py-3">
+    <div class="amount ml-2">
+      <span > TOTAL AMOUNT</span>
+    </div>
+    <div class="mr-3"> <span class="font-weight-bold mr-5 pr-3">$<%= number_with_precision(@transactions.sum(:amount), :precision => 2) %>
+    </div>
+  </div>
+</div>
+</section>
+<div class="bg-success py-3">
+  <%= link_to 'new group' , new_group_path, class:'btn btn-transact text-white border w-50 py-3 ' %>
+</div>
+<!-- <div class="bg-white pt-5">
 <% content_for :title, 'Group Details' %>
 <div class="d-flex justify-content-between border p-2  mx-5">
   <div class="d-flex">
@@ -40,4 +78,4 @@
 <div class="bg-success py-3 mt-5">
   <%= link_to 'new group' , new_group_path, class:'btn btn-transact text-white border w-50 py-3 ' %>
 </div>
-</div>
+</div> -->
