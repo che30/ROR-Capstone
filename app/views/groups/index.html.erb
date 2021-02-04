@@ -6,7 +6,7 @@
 <div class="bg-light-white p-b pt-2">
    <% @groups.each do |group| %>
    <%= link_to(group_url(group.id), class: "text-decoration-none text-dark") do %>
-<section class="d-flex justify-content-between bg-white  align-items-center align-content-center border mx-4 my-2 py-4">
+<section class="d-flex justify-content-between bg-white  align-items-center align-content-center border mx-3 my-2 py-4">
    
    <div>   <img src="<%=group.icon%>" alt=""class="w-75 pl-4 "></div>
    <div>   <%=group.name%></div>
