@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      # flash[:notice] = 'user successfully created'
+      flash[:notice] = 'user successfully created'
       redirect_to @user
     else
       flash.now[:alert] = "Error: #{@user.errors.full_messages.join(', ')}"
