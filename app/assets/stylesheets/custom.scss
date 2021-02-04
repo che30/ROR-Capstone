@@ -27,6 +27,7 @@
 body {
   font-family: 'FontsFree-Net-Proxima-Nova-Bold', 'proximanova-light', arial, sans-serif;
   color: #3778c2;
+  overflow: hidden;
 }
 //transactions
 
@@ -117,8 +118,8 @@ a:active {
 //hompage
 
 .homepage-section {
-  padding-bottom: 190px;
-  width: 900px;
+  padding: 100px 0 280px 0;
+  width: 700px;
 }
 
 .bg-grey {
@@ -136,7 +137,7 @@ a:active {
 }
 
 .w-h {
-  width: 905px;
+  width: 705px;
 }
 
 .cookie-cursive {
@@ -150,7 +151,8 @@ a:active {
 @media (max-width: 567px) {
   //hompage
   .w-h {
-    width: 400px;
+    width: 340px;
+    margin-right: 10px;
   }
 
   .w-t-s {
@@ -170,8 +172,9 @@ a:active {
   }
 
   .homepage-section {
-    padding-bottom: 100px;
-    width: 250px;
+    padding: 105px 0 235px 0;
+    margin: -20px -30px 0 -30px;
+    width: 340px;
   }
 
   .fs {
