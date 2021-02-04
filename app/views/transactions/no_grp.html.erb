@@ -1,19 +1,19 @@
 
-<div class="d-flex align-items-center justify-content-start">
+<div class="d-flex align-items-center align-content-center justify-content-start">
   <p>  <%= render 'shared/drop_down' %></p>
     <h1 class="text-center text-white mx-auto h-t-w">NO GROUP TRANSACTIONS</h1>
   </div>
 <div class="bg-light-white p-b">
 <h2 class="d-flex justify-content-between bg-white">
   <div>
-    <span class="font-nova-light">  Total amount</span>
+    <span class="font-nova-light t-fs ml-2">  Total amount</span>
   </div>
   <div class="mr-1">
-   <span class="font-nova-bold "> $<%=sum_amount(@transaction_nil)%></span>
+   <span class="font-nova-bold t-fs-a mr-2"> $<%=sum_amount(@transaction_nil)%></span>
   </div>
 </h2>
 <% @transaction_nil.each do |transaction| %>
-  <section class="d-flex justify-content-between border bg-white py-3 mx-2 my-3 ">
+  <section class="d-flex justify-content-between border bg-light-white py-3 mx-2 my-3 ">
     <div class="ml-2">
       <%=transaction.name%>
     </div>
