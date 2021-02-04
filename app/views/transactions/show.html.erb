@@ -9,15 +9,15 @@
     <div><img src="<%=@transaction.group.icon%>" alt="" class="w-50 border">
       <% end %>
     </div>
-    <div ><span><%=@transaction.name%></span>
+    <div ><span>Transaction name <br><%=@transaction.name%></span>
     </div>
   </div>
-  <div class="transaction-id-info  d-flex justify-content-between py-3">
+  <div class="transaction-id-info   d-flex justify-content-between py-3">
     <div class="ml-2">
       <span> Transaction No.<%=@transaction.id%></span>
     </div>
     <div class="mr-3">
- <span> <%=@transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></span>
+ <span>Date created <br> <%=@transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></span>
     </div>
   </div>
   <div class="d-flex justify-content-between  py-3">
