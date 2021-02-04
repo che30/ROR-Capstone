@@ -1,6 +1,9 @@
-<%= render 'shared/drop_down' %>
+
+<div class="d-flex align-items-center justify-content-start">
+   <p>  <%= render 'shared/drop_down' %></p>
+     <h1 class="text-center text-white mx-auto h-t-w">ALL GROUPS</h1>
+   </div>
 <div class="bg-white">
-<% content_for :title, "ALL Groups" %>
    <% @groups.each do |group| %>
    <%= link_to(group_url(group.id), class: "text-decoration-none text-dark") do %>
 <section class="d-flex justify-content-between  align-items-center align-content-center border my-2 py-4">
