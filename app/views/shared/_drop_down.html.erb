@@ -2,7 +2,7 @@
    <div class="dpn">
     <button class="dpbtn"><i class="fa fa-navicon"></i></button>
     <div class="dpn-content">
-      <%=current_user.username %>
+    <p class="text-white text-center"><%=current_user.username %></p>
       <%= link_to 'All my transactions',transactions_path,class: "text-white text-decoration-none" %>
       <%= link_to 'All groups',groups_path,class: "text-white text-decoration-none"%>
       <%= link_to 'logout', logout_path,method: :delete,class: "text-white text-decoration-none" %>
