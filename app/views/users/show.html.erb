@@ -1,10 +1,13 @@
-<p class="text-md-right text-lg-right text-left ml-1 "> <%= link_to 'logout', logout_path,method: :delete,class: "text-white text-decoration-none" %></p>
-<div class="  mx-auto  user-show-gradient d-flex flex-column justify-content-between align-items-center align-content-center">
+
+<div class=" mx-lg-auto mx-md-auto mx-auto mr-1 user-show-gradient d-flex flex-column  align-items-center align-content-center">
   <div>
       <div class="ml-3 pt-5"><%= image_tag current_user.avatar.url(:thumb) %> </div>
       <p class="text-white pt-3 ml-4"><%= current_user.username%></p></div>
-      <div class="border-bottom p-b-s px-4"><%= link_to 'All my transactions',transactions_path,class: "text-white text-decoration-none" %></div>
-      <div class="border-bottom p-b-s"> <%= link_to 'All my external transactions', transactions_no_grp_path,class: "text-white text-decoration-none"%></div>
-      <div class="pb-4"><%= link_to 'All groups',groups_path,class: "text-white text-decoration-none"%></div>
+      <div class="pt-5 mt-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+        <div class="border-bottom p-b-s px-4"><%= link_to 'All my transactions',transactions_path,class: "text-white text-decoration-none" %></div>
+      <div class="border-bottom p-b-s-d"> <%= link_to 'All my external transactions', transactions_no_grp_path,class: "text-white text-decoration-none"%></div>
+      <div class="border-bottom p-b-s px-5"><%= link_to 'All groups',groups_path,class: "text-white text-decoration-none"%></div>
+      <div class=" pt-3"><%= link_to 'logout', logout_path,method: :delete,class: "text-white text-decoration-none" %></div>
+      </div>
     </div>
    
