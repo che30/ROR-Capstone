@@ -1,5 +1,5 @@
-<p class="text-right"> <%= link_to 'logout', logout_path,method: :delete,class: "text-white text-decoration-none" %></p>
-<div class=" mx-auto user-show-gradient d-flex flex-column justify-content-between align-items-center align-content-center">
+<p class="text-md-right text-lg-right text-left ml-1 "> <%= link_to 'logout', logout_path,method: :delete,class: "text-white text-decoration-none" %></p>
+<div class="  mx-auto  user-show-gradient d-flex flex-column justify-content-between align-items-center align-content-center">
   <div>
       <div class="ml-3 pt-5"><%= image_tag current_user.avatar.url(:thumb) %> </div>
       <p class="text-white pt-3 ml-4"><%= current_user.username%></p></div>

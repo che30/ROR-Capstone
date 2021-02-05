@@ -13,7 +13,7 @@
 }
 
 .p-b {
-  padding-bottom: 150px;
+  padding-bottom: 250px;
 }
 // FontsFree-Net-Proxima-Nova-Light
 .font-nova-bold {
@@ -54,18 +54,27 @@ body {
 .light-white {
   color: rgb(202, 193, 193);
 }
-
+// transaction
 .transaction-new-padding {
-  padding: 100px 10px;
+  width: 80%;
+}
+
+.fc-w {
+  width: 100px;
 }
 
 .transaction-show-padding {
   padding: 50px 50px;
 }
-
+//users
+.u-sf {
+  // width: 310px;
+  margin-left: 10px;
+}
 //  user new
 .user-new-padding {
   padding: 100px 100px;
+  width: 80%;
 }
 
 .user-new-btn-log {
@@ -86,15 +95,16 @@ body {
 }
 
 .user-show-gradient {
-  background:
+  background-image:
     linear-gradient(
       40deg,
       #3190e3,
       #163150
     );
+  background-size: cover, cover;
   height: 675px;
   width: 600px;
-  padding: 20px 0 10px 0;
+  padding: 20px 0 0 0;
   margin-top: -100px;
 }
 
@@ -114,6 +124,15 @@ a:active {
 .user-show a:hover, {
   background-color: rgb(41, 143, 23);
   padding: 10px 10px;
+}
+// All groups
+.p-b-g {
+  padding: 0 0 290px 0;
+}
+
+//no group
+.p-b-nogroup {
+  padding-bottom: 345px;
 }
 //hompage
 
@@ -149,10 +168,17 @@ a:active {
 }
 
 @media (max-width: 567px) {
+  //
+  body {
+    width: 100%;
+  }
   //hompage
   .w-h {
-    width: 340px;
-    margin-right: 10px;
+    width: 320px;
+  }
+
+  .u-sf {
+    width: 310px;
   }
 
   .w-t-s {
@@ -167,8 +193,13 @@ a:active {
     padding-left: 0;
     padding-right: 0;
     padding-top: 100px;
-    padding-bottom: 275px;
-    width: 335px;
+    padding-bottom: 340px;
+    width: 360px;
+  }
+
+  .transaction-new-padding {
+    width: 360px;
+    padding-bottom: 340px;
   }
 
   .user-show-gradient {
@@ -176,9 +207,8 @@ a:active {
   }
 
   .homepage-section {
-    padding: 105px 0 235px 0;
-    margin: -20px -30px 0 -30px;
-    width: 340px;
+    margin-top: -30px;
+    width: 360px;
   }
 
   .fs {
@@ -186,20 +216,14 @@ a:active {
   }
 
   .p-b {
-    padding: 0 0 280px 0;
-    margin-right: -15px;
-    margin-left: -15px;
+    padding: 0 0 290px 0;
+  }
+
+  .p-b-nogroup {
+    padding-bottom: 320px;
   }
 
   .p-b-g {
-    padding: 0 0 305px 0;
-    margin-right: -15px;
-    margin-left: -15px;
+    padding: 0 0 321px 0;
   }
-
-  .w-btn {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  
 }

@@ -2,10 +2,10 @@
   <h1 class="text-white mx-auto pl-5 h-t-w">LOGIN</h1>
   <div><%= render 'shared/sign_in_signup' %></div>
  </div>
-  <div class="bg-white user-new-padding ">
+  <div class="bg-white user-new-padding mx-auto ">
     <% if !current_user %>
       <div class="mt-5 ">
-        <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+        <%= form_with(url: login_path,class: "mx-auto u-sf", scope: :session, local: true) do |f| %>
         <div class="text-center">
           <%= render "shared/username",f: f %>
         </div>

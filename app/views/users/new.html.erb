@@ -2,8 +2,8 @@
   <p class="text-white mx-auto pl-5">NEW USER</p>
   <div><%= render 'shared/sign_in_signup' %></div>
  </div>
-<div class="bg-white user-new-padding">
-    <%= form_with model: @user,class: 'form-horizontal text-center' ,html: { multipart: true } do |f| %>
+<div class="bg-white user-new-padding mx-auto">
+    <%= form_with model: @user,class: 'form-horizontal text-center ' ,html: { multipart: true } do |f| %>
        <%= render "shared/username",f: f %>
       <div class="form-group">
         <%= f.label :avatar,class: 'col-md-4 control-label' %>
