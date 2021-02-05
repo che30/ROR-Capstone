@@ -1,6 +1,9 @@
- <%= render 'shared/drop_down' %>
-<% content_for :title, 'NEW GROUP' %>
-<div class="bg-white py-3 pb-5">
+
+<div class="d-flex align-items-center justify-content-start align-items-center">
+  <p>  <%= render 'shared/drop_down' %></p>
+    <h1 class="text-center text-white mx-auto h-t-w">New group</h1>
+  </div>
+<div class="bg-white w-75-lg mx-auto py-3 pb-5">
 <%= form_for @group, html: { class: "mt-5 mx-3" } do |f| %>
 
   <%= f.text_field :name, class: "form-control mb-3", placeholder: "Name" %>
