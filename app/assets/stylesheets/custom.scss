@@ -97,10 +97,17 @@ body {
 }
 
 .user-show-gradient {
-  background-size: 100%, 100%;
+  margin-top: -25px;
   height: 675px;
-  width: 60%;
+  width: 65%;
   padding: 20px 0 0 0;
+  background-image:
+    linear-gradient(
+      40deg,
+      #3190e3,
+      #163150
+    );
+  background-size: 100%;
 }
 
 a:active {
@@ -166,12 +173,6 @@ a:active {
   //
   body {
     width: 100%;
-    //  background-image:
-    //  linear-gradient(
-    //    40deg,
-    //    #3190e3,
-    //    #163150
-    //  );
   }
   //hompage
   .w-h {
@@ -204,7 +205,7 @@ a:active {
   }
 
   .user-show-gradient {
-    width: 200px;
+    padding-bottom: 100%;
   }
 
   .homepage-section {
