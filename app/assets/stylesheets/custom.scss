@@ -251,6 +251,7 @@ a:active {
   .w-75-lg {
     width: 100%;
   }
+
   .user-new-padding {
     padding-left: 0;
     padding-right: 0;
@@ -258,31 +259,33 @@ a:active {
     padding-bottom: 70%;
     width: 100%;
   }
+
   .user-show-gradient {
     padding-bottom: 65%;
   }
-
 }
-@media (min-width: 411px) and (max-width: 823px)
-{
+
+@media (min-width: 411px) and (max-width: 823px) {
   .user-show-gradient {
     padding-bottom: 205%;
   }
-
 }
-@media (min-width: 1025px)
-{
-  .p-b,.p-b-g,.p-b-nogroup  {
+
+@media (min-width: 1025px) {
+  .p-b,
+  .p-b-g,
+  .p-b-nogroup {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-
   }
+
   .w-btn {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+
   .max-w {
     max-width: 500px;
   }
