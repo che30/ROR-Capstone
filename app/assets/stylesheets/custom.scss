@@ -194,9 +194,8 @@ a:active {
   .user-new-padding {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 100px;
-    padding-bottom: 340px;
-    width: 360px;
+    padding-bottom: 80%;
+    width: 100%;
   }
 
   .transaction-new-padding {
@@ -205,7 +204,8 @@ a:active {
   }
 
   .user-show-gradient {
-    padding-bottom: 100%;
+    padding-bottom: 120%;
+    width: 75%;
   }
 
   .homepage-section {
@@ -251,4 +251,22 @@ a:active {
   .w-75-lg {
     width: 100%;
   }
+  .user-new-padding {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 100px;
+    padding-bottom: 70%;
+    width: 100%;
+  }
+  .user-show-gradient {
+    padding-bottom: 65%;
+  }
+
+}
+@media (min-width: 411px) and (max-width: 823px)
+{
+  .user-show-gradient {
+    padding-bottom: 205%;
+  }
+
 }
