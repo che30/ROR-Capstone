@@ -7,18 +7,7 @@
   font-family: 'proximanova-light';
   src: url("/assets/proximanova-light.otf");
 }
-// Groups
-.w-75-lg {
-  width: 800px;
-}
-// all views
-.h-t-w {
-  font-size: 18px;
-}
 
-.p-b {
-  padding-bottom: 250px;
-}
 // FontsFree-Net-Proxima-Nova-Light
 .font-nova-bold {
   font-family: 'FontsFree-Net-Proxima-Nova-Bold', arial, sans-serif;
@@ -31,6 +20,22 @@
 body {
   font-family: 'FontsFree-Net-Proxima-Nova-Bold', 'proximanova-light', arial, sans-serif;
   color: #3778c2;
+}
+// Groups
+.w-75-lg {
+  width: 800px;
+}
+// all views
+.h-t-w {
+  font-size: 18px;
+}
+
+.p-b {
+  padding-bottom: 35%;
+}
+
+.pl-t {
+  padding-left: 9%;
 }
 //transactions
 
@@ -76,7 +81,7 @@ body {
 }
 //  user new
 .user-new-padding {
-  padding: 100px 100px;
+  padding: 10% 10%;
   width: 80%;
 }
 
@@ -129,18 +134,21 @@ a:active {
 }
 // All groups
 .p-b-g {
-  padding: 0 0 290px 0;
+  padding: 0 0 38% 0;
 }
 
 //no group
 .p-b-nogroup {
-  padding-bottom: 345px;
+  padding-bottom: 35%;
 }
 //hompage
 
 .homepage-section {
-  padding: 100px 0 280px 0;
-  width: 700px;
+  padding: 20px 0 25% 0;
+}
+
+.homepage-section-2 {
+  padding: 150px 0 5% 0;
 }
 
 .bg-grey {
@@ -180,7 +188,7 @@ a:active {
   }
 
   .u-sf {
-    width: 310px;
+    width: 50%;
   }
 
   .w-t-s {
@@ -194,24 +202,28 @@ a:active {
   .user-new-padding {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 80%;
+    padding-bottom: 135%;
     width: 100%;
   }
 
   .transaction-new-padding {
-    width: 360px;
-    padding-bottom: 340px;
+    width: 100%;
+    padding-bottom: 120%;
   }
 
   .user-show-gradient {
-    padding-bottom: 120%;
-    width: 75%;
+    padding-bottom: 220%;
+    width: 100%;
   }
 
   .homepage-section {
     margin-top: -25px;
-    width: 360px;
-    padding-bottom: 100%;
+    width: 100%;
+    padding-bottom: 150%;
+  }
+
+  .homepage-section-2 {
+    padding: 300px 0 5% 0;
   }
 
   .fs {
@@ -219,23 +231,66 @@ a:active {
   }
 
   .p-b {
-    padding: 0 0 120% 0;
+    padding: 0 0 165% 0;
   }
 
   .p-b-nogroup {
-    padding-bottom: 127%;
+    padding-bottom: 182%;
   }
 
   .p-b-g {
-    padding: 0 0 137% 0;
+    padding: 0 0 180% 0;
   }
 
   .w-75-lg {
     width: 100%;
   }
+
+  .pl-t {
+    padding-left: 0;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 567px) and (max-width: 768px) {
+  .p-b {
+    padding: 0 0 145% 0;
+  }
+
+  .p-b-nogroup {
+    padding-bottom: 150%;
+  }
+
+  .p-b-g {
+    padding-bottom: 178%;
+  }
+
+  .pl-t {
+    padding-left: 0;
+  }
+
+  .user-show-gradient {
+    padding-bottom: 205%;
+    width: 100%;
+  }
+
+  .transaction-new-padding {
+    width: 100%;
+    padding-bottom: 140%;
+  }
+
+  .user-new-padding {
+    width: 100%;
+    padding-bottom: 125%;
+  }
+
+  .homepage-section {
+    margin-top: -25px;
+    width: 100%;
+    padding-bottom: 150%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .p-b {
     padding: 0 0 130% 0;
   }
@@ -256,18 +311,21 @@ a:active {
     padding-left: 0;
     padding-right: 0;
     padding-top: 100px;
-    padding-bottom: 70%;
+    padding-bottom: 100%;
     width: 100%;
   }
 
   .user-show-gradient {
-    padding-bottom: 65%;
+    padding-bottom: 140%;
   }
-}
 
-@media (min-width: 411px) and (max-width: 823px) {
-  .user-show-gradient {
-    padding-bottom: 205%;
+  .pl-t {
+    padding-left: 9%;
+  }
+
+  .transaction-new-padding {
+    width: 100%;
+    padding-bottom: 40%;
   }
 }
 
@@ -288,5 +346,9 @@ a:active {
 
   .max-w {
     max-width: 500px;
+  }
+
+  .homepage-section {
+    width: 100%;
   }
 }

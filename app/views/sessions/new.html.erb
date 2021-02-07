@@ -6,7 +6,7 @@
     <% if !current_user %>
       <div class="mt-5 ">
         <%= form_with(url: login_path,class: "mx-auto u-sf", scope: :session, local: true) do |f| %>
-        <div class="text-center">
+        <div class="text-center ">
           <%= render "shared/username",f: f %>
         </div>
     </div>
