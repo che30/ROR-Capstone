@@ -76,13 +76,15 @@ body {
 }
 //users
 .u-sf {
-  // width: 310px;
-  margin-left: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 //  user new
 .user-new-padding {
-  padding: 10% 10%;
-  width: 80%;
+  padding: 10% 0 10% 0;
+  width: 40%;
+  border-radius: 10px;
 }
 
 .user-new-btn-log {
@@ -204,6 +206,7 @@ a:active {
     padding-right: 0;
     padding-bottom: 135%;
     width: 100%;
+    border-radius: 0;
   }
 
   .transaction-new-padding {
@@ -281,6 +284,7 @@ a:active {
   .user-new-padding {
     width: 100%;
     padding-bottom: 125%;
+    border-radius: 0;
   }
 
   .homepage-section {
@@ -313,6 +317,7 @@ a:active {
     padding-top: 100px;
     padding-bottom: 100%;
     width: 100%;
+    border-radius: 0;
   }
 
   .user-show-gradient {
