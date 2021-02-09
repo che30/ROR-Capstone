@@ -1,0 +1,8 @@
+<% if !current_user %>
+<ul class="list-unstyled d-flex ">
+<li class="mr-2">
+<%= link_to 'sign in', login_path,class: "text-decoration-none text-white" %>
+</li>
+<li> <%= link_to 'sign up', signup_path,class: "text-decoration-none text-white" %></li>
+</ul>
+<% end %>
